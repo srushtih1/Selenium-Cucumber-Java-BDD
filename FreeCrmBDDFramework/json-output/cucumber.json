@@ -1,0 +1,366 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#@HomePageFeature"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Swag Labs home page drop down to list products test",
+        "description": "",
+        "id": "swag-labs-home-page-feature;swag-labs-home-page-drop-down-to-list-products-test;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2665965300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is already on login page",
+            "match": {
+              "location": "LoginStepDefinition.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 445479800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters standard_user and secret_sauce to login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginStepDefinition.login_to_Swag_labs(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 406980000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify products as per dropdown Name (A to Z)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (A to Z)",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginStepDefinition.verify_products_as_per_drop_dpwn_list(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 684846900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@homeDropdownCheck"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Swag Labs home page drop down to list products test",
+        "description": "",
+        "id": "swag-labs-home-page-feature;swag-labs-home-page-drop-down-to-list-products-test;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1756090500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is already on login page",
+            "match": {
+              "location": "LoginStepDefinition.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 521851300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters standard_user and secret_sauce to login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginStepDefinition.login_to_Swag_labs(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 497430000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify products as per dropdown Name (Z to A)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (Z to A)",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginStepDefinition.verify_products_as_per_drop_dpwn_list(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 713135000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@homeDropdownCheck"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Swag Labs home page drop down to list products test",
+        "description": "",
+        "id": "swag-labs-home-page-feature;swag-labs-home-page-drop-down-to-list-products-test;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1662018000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is already on login page",
+            "match": {
+              "location": "LoginStepDefinition.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 484066500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters standard_user and secret_sauce to login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginStepDefinition.login_to_Swag_labs(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 425995500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify products as per dropdown Price (low to high)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Price (low to high)",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginStepDefinition.verify_products_as_per_drop_dpwn_list(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 706332200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@homeDropdownCheck"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Swag Labs home page drop down to list products test",
+        "description": "",
+        "id": "swag-labs-home-page-feature;swag-labs-home-page-drop-down-to-list-products-test;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1704936600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is already on login page",
+            "match": {
+              "location": "LoginStepDefinition.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 525438700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters standard_user and secret_sauce to login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginStepDefinition.login_to_Swag_labs(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 404351700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify products as per dropdown Price (high to low)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Price (high to low)",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginStepDefinition.verify_products_as_per_drop_dpwn_list(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 720751200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@homeDropdownCheck"
+          }
+        ]
+      }
+    ],
+    "name": "Swag Labs home page feature",
+    "description": "",
+    "id": "swag-labs-home-page-feature",
+    "keyword": "Feature",
+    "uri": "/Users/19515/eclipse-workspace-new/CucumberJavaSeleniumDemo/FreeCrmBDDFramework/src/main/java/Features/homePage.feature"
+  }
+]
