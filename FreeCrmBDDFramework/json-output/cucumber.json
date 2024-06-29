@@ -1,11 +1,5 @@
 [
   {
-    "comments": [
-      {
-        "line": 1,
-        "value": "#@HomePageFeature"
-      }
-    ],
     "line": 2,
     "elements": [
       {
@@ -18,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2665965300,
+              "duration": 3343984400,
               "status": "passed"
             },
             "line": 6,
@@ -30,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 445479800,
+              "duration": 608904400,
               "status": "passed"
             },
             "line": 7,
@@ -56,7 +50,7 @@
           },
           {
             "result": {
-              "duration": 406980000,
+              "duration": 474693300,
               "status": "passed"
             },
             "line": 8,
@@ -77,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 684846900,
+              "duration": 735970000,
               "status": "passed"
             },
             "line": 9,
@@ -89,6 +83,14 @@
           }
         ],
         "tags": [
+          {
+            "line": 1,
+            "name": "@HomePageFeature"
+          },
+          {
+            "line": 4,
+            "name": "@RegressionTest"
+          },
           {
             "line": 4,
             "name": "@homeDropdownCheck"
@@ -105,7 +107,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1756090500,
+              "duration": 2318421500,
               "status": "passed"
             },
             "line": 6,
@@ -117,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 521851300,
+              "duration": 1152995100,
               "status": "passed"
             },
             "line": 7,
@@ -143,7 +145,7 @@
           },
           {
             "result": {
-              "duration": 497430000,
+              "duration": 534667300,
               "status": "passed"
             },
             "line": 8,
@@ -164,7 +166,7 @@
           },
           {
             "result": {
-              "duration": 713135000,
+              "duration": 730808600,
               "status": "passed"
             },
             "line": 9,
@@ -176,6 +178,14 @@
           }
         ],
         "tags": [
+          {
+            "line": 1,
+            "name": "@HomePageFeature"
+          },
+          {
+            "line": 4,
+            "name": "@RegressionTest"
+          },
           {
             "line": 4,
             "name": "@homeDropdownCheck"
@@ -192,7 +202,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1662018000,
+              "duration": 2126965300,
               "status": "passed"
             },
             "line": 6,
@@ -204,7 +214,7 @@
           },
           {
             "result": {
-              "duration": 484066500,
+              "duration": 840238500,
               "status": "passed"
             },
             "line": 7,
@@ -230,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 425995500,
+              "duration": 648009000,
               "status": "passed"
             },
             "line": 8,
@@ -251,7 +261,7 @@
           },
           {
             "result": {
-              "duration": 706332200,
+              "duration": 801756600,
               "status": "passed"
             },
             "line": 9,
@@ -263,6 +273,14 @@
           }
         ],
         "tags": [
+          {
+            "line": 1,
+            "name": "@HomePageFeature"
+          },
+          {
+            "line": 4,
+            "name": "@RegressionTest"
+          },
           {
             "line": 4,
             "name": "@homeDropdownCheck"
@@ -279,7 +297,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1704936600,
+              "duration": 2294939600,
               "status": "passed"
             },
             "line": 6,
@@ -291,7 +309,7 @@
           },
           {
             "result": {
-              "duration": 525438700,
+              "duration": 907723600,
               "status": "passed"
             },
             "line": 7,
@@ -317,7 +335,7 @@
           },
           {
             "result": {
-              "duration": 404351700,
+              "duration": 639757500,
               "status": "passed"
             },
             "line": 8,
@@ -338,7 +356,7 @@
           },
           {
             "result": {
-              "duration": 720751200,
+              "duration": 722724500,
               "status": "passed"
             },
             "line": 9,
@@ -351,6 +369,14 @@
         ],
         "tags": [
           {
+            "line": 1,
+            "name": "@HomePageFeature"
+          },
+          {
+            "line": 4,
+            "name": "@RegressionTest"
+          },
+          {
             "line": 4,
             "name": "@homeDropdownCheck"
           }
@@ -361,6 +387,386 @@
     "description": "",
     "id": "swag-labs-home-page-feature",
     "keyword": "Feature",
-    "uri": "/Users/19515/eclipse-workspace-new/CucumberJavaSeleniumDemo/FreeCrmBDDFramework/src/main/java/Features/homePage.feature"
+    "uri": "homePage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@HomePageFeature"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Swag Labs login test scenario",
+        "description": "",
+        "id": "swag-labs-login-feature;swag-labs-login-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2113127500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is already on login page",
+            "match": {
+              "location": "LoginStepDefinition.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20858600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "title of login page is SwagLabs",
+            "match": {
+              "location": "LoginStepDefinition.title_of_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 610214300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters username and password",
+            "match": {
+              "location": "LoginStepDefinition.user_enters_username_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 119384900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on login button",
+            "match": {
+              "location": "LoginStepDefinition.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111905500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify user is on home page",
+            "match": {
+              "location": "LoginStepDefinition.verify_user_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 706387100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@LoginCheck"
+          },
+          {
+            "line": 4,
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Swag Labs login test scenario with Examples data driven",
+        "description": "",
+        "id": "swag-labs-login-feature;swag-labs-login-test-scenario-with-examples-data-driven;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2053981900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user is already on login page",
+            "match": {
+              "location": "LoginStepDefinition.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 872148600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user enters standard_user and secret_sauce to login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginStepDefinition.login_to_Swag_labs(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 723460000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@LoginCheckWithExamples"
+          },
+          {
+            "line": 22,
+            "name": "@DataDrivenTypesTest"
+          },
+          {
+            "line": 1,
+            "name": "@LoginFeature"
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Swag Labs login test scenario with Data tables approach for data driven",
+        "description": "",
+        "id": "swag-labs-login-feature;swag-labs-login-test-scenario-with-data-tables-approach-for-data-driven",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2246372800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user is already on login page",
+            "match": {
+              "location": "LoginStepDefinition.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10733900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "title of login page is SwagLabs",
+            "match": {
+              "location": "LoginStepDefinition.title_of_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 490200700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "login with username and password data",
+            "match": {
+              "location": "LoginStepDefinition.login_with_datatable_use(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "visual_user",
+                  "secret_sauce"
+                ],
+                "line": 37
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 274386800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "click on login button",
+            "match": {
+              "location": "LoginStepDefinition.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122322500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "verify user is on home page",
+            "match": {
+              "location": "LoginStepDefinition.verify_user_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 725207500,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@LoginCheckWithDataTablesApproachwithList"
+          },
+          {
+            "line": 32,
+            "name": "@DataDrivenTypesTest"
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "Swag Labs login test scenario with Data tables approach for data driven using Maps",
+        "description": "",
+        "id": "swag-labs-login-feature;swag-labs-login-test-scenario-with-data-tables-approach-for-data-driven-using-maps",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2257472900,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user is already on login page",
+            "match": {
+              "location": "LoginStepDefinition.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10510900,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "title of login page is SwagLabs",
+            "match": {
+              "location": "LoginStepDefinition.title_of_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1778359100,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "add username and password",
+            "match": {
+              "location": "LoginStepDefinition.login_with_datatable_with_maps(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "visual_user",
+                  "secret_sauce"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "standard_user",
+                  "secret_sauce"
+                ],
+                "line": 49
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 707589400,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 42,
+            "name": "@LoginCheckWithDataTablesApproachWithMap"
+          },
+          {
+            "line": 42,
+            "name": "@DataDrivenTypesTest"
+          }
+        ]
+      }
+    ],
+    "name": "Swag Labs login feature",
+    "description": "",
+    "id": "swag-labs-login-feature",
+    "keyword": "Feature",
+    "uri": "loginPage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LoginFeature"
+      }
+    ]
   }
 ]

@@ -1,7 +1,7 @@
-#@HomePageFeature
+@HomePageFeature
 Feature: Swag Labs home page feature
 
-  @homeDropdownCheck
+  @homeDropdownCheck @RegressionTest
   Scenario Outline: Swag Labs home page drop down to list products test 
     Given user is already on login page
     Then user enters <username> and <password> to login

@@ -3,20 +3,26 @@ package StepDefinitions;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver;
+
 import org.openqa.selenium.edge.EdgeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -97,6 +103,36 @@ public class LoginStepDefinition {
 	public void login_without_examples(String username, String password) {
 		driver.findElement(By.id("user-name")).sendKeys(username);
 		driver.findElement(By.id("password")).sendKeys(password);
+	}
+	
+	@Then("^login with username and password data$")
+	public void login_with_datatable_use(DataTable credentials) {
+		List<List<String>> data = credentials.raw();
+		driver.findElement(By.id("user-name")).sendKeys(data.get(0).get(0));
+		driver.findElement(By.id("password")).sendKeys(data.get(0).get(1));
+	}
+	
+	@Then("^add username and password$")
+	public void login_with_datatable_with_maps(DataTable credentials) {
+		for (Map<String, String> data : credentials.asMaps(String.class, String.class)){
+			WebDriverWait wait = new WebDriverWait(driver, 20);
+			
+			driver.findElement(By.id("user-name")).sendKeys(data.get("username"));
+			driver.findElement(By.id("password")).sendKeys(data.get("password"));
+			driver.findElement(By.id("login-button")).click();
+			
+			WebElement home_page_products = driver.findElement(By.className("header_secondary_container"));
+			Assert.assertEquals(true, home_page_products.isDisplayed());
+			System.out.println("Succesffuly landed on the home page after login !! " + home_page_products.findElement(By.className("title")).getText());
+			
+			driver.findElement(By.id("react-burger-menu-btn")).click();
+			
+			wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("bm-menu-wrap")));
+			WebElement logout_btn = driver.findElement(By.cssSelector(".bm-item-list > a#logout_sidebar_link"));
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+			js.executeScript("arguments[0].click();", logout_btn);
+			//logout_btn.click();			
+		}
 	}
 	
 	
