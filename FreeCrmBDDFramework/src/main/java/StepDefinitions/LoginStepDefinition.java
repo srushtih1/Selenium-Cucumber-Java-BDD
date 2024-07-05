@@ -23,6 +23,8 @@ import com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver;
 import org.openqa.selenium.edge.EdgeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import cucumber.api.DataTable;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -31,9 +33,11 @@ import junit.framework.Assert;
 
 public class LoginStepDefinition {
 	
-	//selenium code 
+	//selenium code
 	WebDriver driver;
 	
+	// @Before("@LoginCheckWithoutExamples") or @Before(order=0) , Before(order=1)
+	@Before
 	@Given("^user is already on login page$")
 	public void user_on_login_page() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\19515\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
@@ -92,6 +96,7 @@ public class LoginStepDefinition {
 		
 	}
 	
+	@After
 	@And("^close the browser$")
 	public void close_browser() {
 	    if (driver != null) {

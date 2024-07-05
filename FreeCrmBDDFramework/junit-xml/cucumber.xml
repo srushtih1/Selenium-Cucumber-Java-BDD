@@ -1,62 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="34.837182">
-<testcase classname="Swag Labs home page feature" name="Swag Labs home page drop down to list products test" time="5.163552">
-<system-out><![CDATA[Given user is already on login page.........................................passed
-Then user enters standard_user and secret_sauce to login....................passed
-Then verify products as per dropdown Name (A to Z)..........................passed
-And close the browser.......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Swag Labs home page feature" name="Swag Labs home page drop down to list products test 2" time="4.736892">
-<system-out><![CDATA[Given user is already on login page.........................................passed
-Then user enters standard_user and secret_sauce to login....................passed
-Then verify products as per dropdown Name (Z to A)..........................passed
-And close the browser.......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Swag Labs home page feature" name="Swag Labs home page drop down to list products test 3" time="4.416969">
-<system-out><![CDATA[Given user is already on login page.........................................passed
-Then user enters standard_user and secret_sauce to login....................passed
-Then verify products as per dropdown Price (low to high)....................passed
-And close the browser.......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Swag Labs home page feature" name="Swag Labs home page drop down to list products test 4" time="4.565145">
-<system-out><![CDATA[Given user is already on login page.........................................passed
-Then user enters standard_user and secret_sauce to login....................passed
-Then verify products as per dropdown Price (high to low)....................passed
-And close the browser.......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Swag Labs login feature" name="Swag Labs login test scenario" time="3.681878">
-<system-out><![CDATA[Given user is already on login page.........................................passed
-When title of login page is SwagLabs........................................passed
-Then user enters username and password......................................passed
-And click on login button...................................................passed
-Then verify user is on home page............................................passed
-And close the browser.......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Swag Labs login feature" name="Swag Labs login test scenario with Examples data driven" time="3.64959">
-<system-out><![CDATA[Given user is already on login page.........................................passed
-Then user enters standard_user and secret_sauce to login....................passed
-And close the browser.......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Swag Labs login feature" name="Swag Labs login test scenario with Data tables approach for data driven" time="3.869224">
-<system-out><![CDATA[Given user is already on login page.........................................passed
-When title of login page is SwagLabs........................................passed
-Then login with username and password data..................................passed
-And click on login button...................................................passed
-Then verify user is on home page............................................passed
-And close the browser.......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Swag Labs login feature" name="Swag Labs login test scenario with Data tables approach for data driven using Maps" time="4.753932">
-<system-out><![CDATA[Given user is already on login page.........................................passed
-When title of login page is SwagLabs........................................passed
-Then add username and password..............................................passed
-And close the browser.......................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="4.013813">
+<testcase classname="Swag Labs Login Page" name="Validate Swag labs home page test" time="4.013813">
+<system-out><![CDATA[Given user launches browser.................................................passed
+Then user is on login page..................................................passed
+Then user enters username, password and clicks login button.................passed
+Then validate the home page title...........................................passed
+And validate the products title.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
